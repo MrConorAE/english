@@ -23,11 +23,11 @@ table {
     transform-style: preserve-3d;
 }
 
-.card:not(:active) {
+.card:not(:hover) {
     transform: rotateY(0deg);
 }
 
-.card:active {
+.card:hover {
     transform: rotateY(360deg);
 }
 
@@ -41,18 +41,18 @@ table {
     font-size: 20px;
 }
 
-.card:active .front {
+.card:hover .front {
     visibility: hidden;
 }
 
-.card:not(:active) .front {
+.card:not(:hover) .front {
     visibility: visible;
 }
 
-.card:active .back {
+.card:hover .back {
     visibility: visible;
 }
 
-.card:not(:active) .back {
+.card:not(:hover) .back {
     visibility: hidden;
 }
