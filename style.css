@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(206, 206, 206);
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.card {
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 15px;
+    color: white;
+    width: 16vw;
+    height: 16vw;
+    clip-path: fill-box;
+    text-align: center;
+    transition: all 1s;
+    box-shadow: grey 0px 2px 5px;
+    transform-style: preserve-3d;
+}
+
+.card:not(:active) {
+    transform: rotateY(0deg);
+}
+
+.card:active {
+    transform: rotateY(360deg);
+}
+
+.front {
+    text-align: right;
+    font-size: 25px;
+}
+
+.card:active .front {
+    visibility: hidden;
+}
+
+.card:not(:active) .front {
+    visibility: visible;
+}
+
+.card:active .back {
+    visibility: visible;
+}
+
+.card:not(:active) .back {
+    visibility: hidden;
+}
