@@ -4,6 +4,11 @@ body {
     font-family: "Merriweather", serif;
 }
 
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
 #flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -87,4 +92,27 @@ body {
 
 .card:not(:hover) span.back {
     opacity: 0%;
+}
+
+div#other-resources {
+    margin: 5px;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div#other-resources h3 {
+    margin-top: 0px;
+}
+
+a {
+    color: #6cc5b9;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: dotted underline;
+    transition: 0.3s all;
+}
+
+a:hover {
+    text-decoration: solid underline;
 }
