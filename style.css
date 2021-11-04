@@ -28,8 +28,8 @@ em {
     height: 250px;
     padding: 5px;
     text-align: center;
-    transition: all 0.5s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition: all 0.3s;
+    transition-timing-function: cubic-bezier(.79, .14, .15, .86);
     box-shadow: grey 0px 2px 5px;
     transform-style: preserve-3d;
     position: relative;
@@ -39,22 +39,22 @@ em {
     transform: rotateY(0deg);
     background-color: #6cc5b9;
     color: black;
-    border: 2px #6cc5b9 solid;
+    border: 5px #6cc5b9 solid;
 }
 
 .card:not(.flip):hover {
-    border: 2px #000000 solid;
+    border: 5px #000000 solid;
 }
 
 .card.flip {
     transform: rotateY(180deg);
     background-color: black;
     color: #6cc5b9;
-    border: 2px #000000 solid;
+    border: 5px #000000 solid;
 }
 
 .card.flip:hover {
-    border: 2px #6cc5b9 solid;
+    border: 5px #6cc5b9 solid;
 }
 
 .card span.front {
@@ -62,7 +62,7 @@ em {
     font-style: italic;
     font-size: 25px;
     font-weight: bold;
-    transition-delay: 0.25s;
+    transition-delay: 0.15s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
@@ -76,7 +76,7 @@ em {
 .card span.back {
     text-align: left;
     font-size: 18px;
-    transition-delay: 0.25s;
+    transition-delay: 0.15s;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
