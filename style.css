@@ -35,16 +35,26 @@ em {
     position: relative;
 }
 
-.card:not(:hover) {
+.card:not(.flip) {
     transform: rotateY(0deg);
     background-color: #6cc5b9;
     color: black;
+    border: 2px #6cc5b9 solid;
 }
 
-.card:hover {
+.card:not(.flip):hover {
+    border: 2px #000000 solid;
+}
+
+.card.flip {
     transform: rotateY(180deg);
     background-color: black;
     color: #6cc5b9;
+    border: 2px #000000 solid;
+}
+
+.card.flip:hover {
+    border: 2px #6cc5b9 solid;
 }
 
 .card span.front {
@@ -78,19 +88,19 @@ em {
 }
 
 
-.card:hover span.front {
+.card.flip span.front {
     opacity: 0%;
 }
 
-.card:not(:hover) span.front {
+.card:not(.flip) span.front {
     opacity: 100%;
 }
 
-.card:hover span.back {
+.card.flip span.back {
     opacity: 100%;
 }
 
-.card:not(:hover) span.back {
+.card:not(.flip) span.back {
     opacity: 0%;
 }
 
