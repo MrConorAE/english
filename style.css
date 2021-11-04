@@ -74,6 +74,7 @@ em {
 }
 
 .card span.back {
+    text-align: left;
     font-size: 18px;
     transition-delay: 0.25s;
     -webkit-backface-visibility: hidden;
@@ -85,6 +86,7 @@ em {
     right: 0;
     bottom: 0;
     padding: 20px;
+    overflow: scroll;
 }
 
 
