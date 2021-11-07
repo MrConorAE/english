@@ -35,6 +35,10 @@ em {
     position: relative;
 }
 
+.card:hover {
+    box-shadow: grey 0px 8px 25px;
+}
+
 .card:not(.flip) {
     transform: rotateY(0deg);
     background-color: #6cc5b9;
@@ -44,6 +48,7 @@ em {
 
 .card:not(.flip):hover {
     border: 5px #000000 solid;
+    transform: translateY(-5px);
 }
 
 .card.flip {
@@ -55,6 +60,7 @@ em {
 
 .card.flip:hover {
     border: 5px #6cc5b9 solid;
+    transform: rotateY(180deg) translateY(-5px);
 }
 
 .card span.front {
